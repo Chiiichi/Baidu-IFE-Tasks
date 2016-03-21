@@ -73,6 +73,9 @@ article >p {
 	font-size: 15px;
 	line-height: 25px;
 }
+article >img {
+	width: 20%;
+}
 .article-inf {
 	color: gray;
 	font-size: 10px;
