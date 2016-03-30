@@ -1,8 +1,52 @@
-/*@group general styles
+@group general styles
 ---------------------------------------------------------------------------------------*/
-* {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 body {
 	width: 100%;
@@ -24,7 +68,7 @@ body {
 	margin: 0 auto;
 	background-color: #fff;
 }
-
+/*顶部*/
 header {
 	position: relative;
 	margin: 0 auto;
@@ -50,43 +94,158 @@ header time {
 	position: absolute;
 	bottom: 2px;
 	right: 2px;
-	color:  black;
+	color: #d45d5c;
 	font:12px "黑体";	
 }
 article {
 	width: 892px;
 	margin: 40px auto;
 	/*height: 1270px;*/
-	background-color: #ccc;
+	/*background-color: #ccc;*/
 }
 section {
 	margin: 40px 0;
 }
+/*正文上*/
 #top {
-	height: 301px;
-	background-color: blue;
 }
 #banner {
 	float: left;
-	width: 641px;
+	position: relative;
+}
+#banner img {
 	height: 301px;
-	background-color: green;
+	width: 641px;
+}
+.color-span {
+	display: block;
+	height: 100%;
+	width: 191px;
+}
+.color-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,255,0,.2);
+}
+.color-right {
+	position: absolute;
+	top: 0;
+	right: 0; 
+	background: rgba(255,0,0,.2);
 }
 #about {
 	float: right;
 	width: 203px;
 	height: 301px;
-	background-color: pink;
+	border-top: 2px solid #cc8091;
 }
-
+#about a {
+	display: block;
+	font-size: 24px;
+	color: #000;
+	font-family: "Microsoft YaHei";
+	margin-top: 10px;
+	text-decoration: underline;
+	line-height: 30px;
+}
+#about p.discText {
+	font-size: 12px;
+	line-height: 10px;
+	color: #676767;
+	font-family: "楷体";
+	display: block;
+}
+#about span.num {
+	font-size: 106px;
+	font-family: "Microsoft YaHei";
+	font-weight: bold;
+	font-style: italic;
+	color: #75b86b;
+	margin-top: 25px;
+	margin-left: -20px;
+	margin-bottom: 15px;
+	display: block;
+}
+#about span.l-num {
+	font-size: 55px;
+	font-family: "Microsoft YaHei";
+	color: #cc8091;
+	display: block;
+	float: left;
+}
+#about .disc {
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+#about span.t-disc {
+	display: block;
+	/*margin-top: 35px;*/
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	color: #cc8091;
+	margin-left: 10px;
+}
+#about span.b-disc {
+	display: block;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	color: #cc8091;
+	margin-left: 10px;
+}
+/*正文中*/
 #middle {
-	height: 50px;
-	background: purple;
+	/*background: purple;*/
 }
+#middle article {
+	display: block;
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#middle article h3 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	text-decoration: underline;
+	color: #d2994f;
+}
+#middle article:first-of-type h3 {
+	color: #418c59;
+}
+#middle article:last-of-type h3 {
+	color: #cc7680;
+}
+#middle article p {
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	color: rgba(35,24,21,0.7);
+	line-height: 16px;
+	letter-spacing:1px;
+	margin: 5px 0;
+}
+#middle article ul {
+	margin-left: 0;
+	padding: 0;
+}
+#middle article ul li {
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	font-style: italic;
+	line-height: 24px;
+	color: rgba(35,24,21,0.7);
+}
+#middle article ul li span {
+	color: #cd4a48;
+}
+/*正文下*/
 #bottom {
 	height: 50px;
 	background-color: red;
 }
+/*底部*/
 footer {
 	width: 892px;
 	height: 60px;
@@ -98,4 +257,4 @@ footer {
 ---------------------------------------------------------------------------------------*/
 
 /*@group overrides
----------------------------------------------------------------------------------------*/
+---------------------------------------------------------------------------------------
