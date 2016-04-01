@@ -99,12 +99,12 @@ header time {
 }
 article {
 	width: 892px;
-	margin: 40px auto;
+	margin: 20px auto;
 	/*height: 1270px;*/
 	/*background-color: #ccc;*/
 }
 section {
-	margin: 40px 0;
+	margin: 30px 0;
 }
 /*正文上*/
 #top {
@@ -242,8 +242,171 @@ section {
 }
 /*正文下*/
 #bottom {
-	height: 50px;
-	background-color: red;
+/*	background-color: gray;*/
+}
+#bottom article {
+	float: left;
+	width: 415px;
+	background: white;
+	overflow: hidden;
+	margin: 0;
+}
+#bottom article h2 {
+	font-size: 42px;
+	color: #11456b;
+	font-family: "黑体";
+	font-weight: bold;
+	margin: 0;
+	word-spacing: 5px;
+}
+#bottom article h2 span {
+	font-size: 72px;
+	color: #f5e327;
+	font-family: "黑体";
+	font-weight: bold;
+	font-style: italic;
+	display: inline-block;
+	margin-right: 20px;
+}
+#bottom article h3 {
+	font-size: 33px;
+	color: #11456b;
+	font-family: "黑体";
+	font-weight: bold;
+	margin: 10px 0;
+}
+#bottom article p:first-of-type {
+	padding-top: 20px;
+	border-top: 2px solid #11456b;
+	text-indent: 0;
+}
+#bottom article p {
+	font-size: 12px;
+	color: #767777;
+	font-family: "宋体";
+	margin:0px 0px;
+	line-height: 18px;
+	text-indent: 24px;
+}
+#bottom article p:first-of-type:first-letter {
+	display: inline-block;
+	line-height:70px;
+	margin: 0px 10px 10px 0px;
+	float: left;
+	font-size: 70px;
+	font-family: "微软雅黑";
+	color: #f5e327;
+	vertical-align: top;
+}
+#bottom article img {
+	float: right;
+	margin: 18px 0 18px 18px;
+}
+#bottom-right {
+	float: right;
+	width: 458px;
+	height: 400px;
+}
+#img-box {
+	position: relative;
+	width: 458px;
+	height: 275px;
+	padding: 0;
+	background: url(../images/task6-right.png) no-repeat;
+	background-size: 458px 275px;
+}
+#img-box .title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 458px;
+	height: 61px;
+	background: rgba(0,0,0,0.3);
+}
+#img-box .title h3 {
+	display: inline-block;
+	float: left;
+	margin-left: 30px;
+	margin-top: 8.5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 44px;
+	height: 44px;
+	border-left: 3px solid #72b16a;
+	font-size: 26px;
+	font-family: "微软雅黑";
+	color: #fff; 
+}
+#img-box .title h4 {
+	display: block;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-style: italic;
+	color: #72b16a;
+	letter-spacing: 140%;
+	margin-top: 40px;
+}
+#info-box {
+	position: relative;
+	width: 459px;
+	height: 318px;
+	background: #eeedd6;
+	margin-top: 40px;
+}
+#info-box ul {
+	display: block;
+	padding: 30px 40px;
+}
+#info-box ul li {
+	line-height: 40px;
+	color: #5a5b5b;
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	letter-spacing: 2px;
+	padding-left: 10px;
+	background: url(../images/task6-icon1.png) no-repeat;
+	background-position: left center;
+}
+#info-box .square {
+	width: 260px;
+	height: 160px;
+	background-color: #d45d5c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 37px 5px;
+	box-sizing: border-box;
+}
+.square span {
+	display: block;
+	float: left;
+	font-size: 86px;
+	font-weight: bold;
+	color: #fff;
+	padding-right: 5px;
+	border-right: 2px solid #fff;
+	/*margin-top: 43px;*/
+}
+.square .info {
+	display: block;
+	float: right;
+	width: 190px;
+}
+.square h4 {
+	display: inline-block;
+	line-height: 20px;
+	color: #fff;
+	margin: 5px 5px;
+	
+}
+.square p {
+	display: block;
+	font-size: 12px;
+	font-family: "黑体";
+	color: #fff;
+	margin: 5px 5px;
 }
 /*底部*/
 footer {
