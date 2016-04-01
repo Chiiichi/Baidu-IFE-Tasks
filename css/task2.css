@@ -73,6 +73,9 @@ article >p {
 	font-size: 15px;
 	line-height: 25px;
 }
+article >img {
+	width: 20%;
+}
 .article-inf {
 	color: gray;
 	font-size: 10px;
@@ -147,8 +150,8 @@ form label {
 	margin-top: 10px ;
 }
 .tip {
-	margin-left: 33%;
-	font-size: 5px;
+	margin-left: 32%;
+	font-size: 10px;
 	color: rgb(204,204,204);
 }
 input, select {
