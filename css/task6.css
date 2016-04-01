@@ -49,6 +49,7 @@ table {
 	border-spacing: 0;
 }
 body {
+	margin: 0;
 	width: 100%;
 	background-color: #ccc;
 }
@@ -344,7 +345,7 @@ section {
 	font-style: italic;
 	color: #72b16a;
 	letter-spacing: 140%;
-	margin-top: 40px;
+	margin-top: 35px;
 }
 #info-box {
 	position: relative;
@@ -370,6 +371,7 @@ section {
 	background-position: left center;
 }
 #info-box .square {
+	float: left;
 	width: 260px;
 	height: 160px;
 	background-color: #d45d5c;
@@ -387,12 +389,11 @@ section {
 	color: #fff;
 	padding-right: 5px;
 	border-right: 2px solid #fff;
-	/*margin-top: 43px;*/
 }
 .square .info {
 	display: block;
 	float: right;
-	width: 190px;
+	width: 180px;
 }
 .square h4 {
 	display: inline-block;
@@ -408,14 +409,49 @@ section {
 	color: #fff;
 	margin: 5px 5px;
 }
+#info-box .info-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 189px;
+	height: 160px;
+	display: block;
+	box-sizing: border-box;
+/*	padding: 10px;*/
+}
+.info-text p {
+	position: relative;
+	font-size: 14px;
+	font-family: "黑体";
+	font-style: italic;
+	color: #5a5b5b;
+	margin: 10px;
+	line-height: 20px;
+}
+.info-text p:before{
+	content: url(../images/task6-icon2-l.png);
+	display: inline-block;
+	margin-right:5px;
+}
+.info-text p:after{
+	content: url(../images/task6-icon2-r.png);
+	display: block;
+	float: right;
+}
+
 /*底部*/
 footer {
 	width: 892px;
 	height: 60px;
 	margin: auto;
-	background-color: yellow;
+	border-top: 1px solid #938e8c;
 }
-
+footer span {
+	float: right;
+	color: #d45d5c;
+	font-size: 12px;
+	font-family: "黑体";
+}
 /*@group page components
 ---------------------------------------------------------------------------------------*/
 
